@@ -1,0 +1,8 @@
+<h1>GeekSports</h1>
+<h3>Tweet一覧</h3>
+
+<h3>投稿を検索</h3>
+ <%= form_tag({controller:"sports",action:"index"}, method: :get) do %>
+   <%= text_field_tag :search %>
+   <%= submit_tag '検索する'  %>
+<% end %>
